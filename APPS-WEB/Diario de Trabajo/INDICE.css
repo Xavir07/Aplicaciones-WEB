@@ -1,0 +1,84 @@
+/*
+    Javier Ruiz Herrera
+    Noviembre 2024
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../IMG/photo-1607799279861-4dd421887fb3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.8125rem;
+    color: rgb(198, 132, 231);
+    text-align: center;
+    font-family: "Gugi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1.25rem;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+    margin-top: .9375rem;
+    margin-bottom: 1.25rem;
+    border: .0625rem solid rgb(92, 21, 214);
+    border-radius: .625rem;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+a {
+    width: 8.125rem;
+    text-align: center;
+    margin: auto;
+    border: .1875rem solid purple;
+    border-radius: 1.25rem;
+    padding: 1.25rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1.25rem;
+    transition: all 0.5s ease;
+}
+
+a:hover {
+    background: linear-gradient(to bottom, transparent , purple);
+    color: white;
+    transform: scale(1.1);
+    translate: 0rem .625rem;
+}
+
+audio {
+    margin: auto;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    opacity: 50%;
+    transition: all 1s ease;
+}
+
+audio:hover {
+    opacity: 100%;
+    transform: scale(1.1);
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #b755e2;
+}

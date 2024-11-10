@@ -1,0 +1,61 @@
+/*
+    Javier Ruiz Herrera
+    Octubre 2024
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 75rem;
+}
+
+.grid {
+    padding: 1.25rem .625rem .625rem .625rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: .625rem;
+    padding: 3.125rem;
+}
+
+.grid img {
+    width: 100%;
+    border: .3125rem solid rgb(141, 65, 141);
+    border-radius: .3125rem;
+    margin: auto;
+    transition: all 0.5s ease;
+    opacity: 95%;
+    z-index: 1;
+}
+
+.grid img:hover {
+    transform: scale(1.1) rotate(2deg);
+    border-color: blue;
+    border-width: .1875rem;
+    opacity: 100%;
+    z-index: 2;
+}
+
+header {
+    margin: auto;
+    margin-top: .625rem;
+    background-color: rgb(101, 40, 162);
+    border: .1875rem solid black;
+    border-radius: .625rem;
+    padding: .3125rem;
+    text-align: center;
+    color: white;
+    text-shadow: .0938rem .0938rem black;
+    width: 40%;
+}
+
+body {
+    background-color: #434343;
+    background-image: url(../IMG/depositphotos_13897499-stock-illustration-vector-texture-metal.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed ;
+}
