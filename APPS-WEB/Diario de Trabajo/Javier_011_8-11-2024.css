@@ -1,0 +1,98 @@
+/*
+    Javier Ruiz Herrera
+    Noviembre 2024
+*/
+
+body {
+    background-color: rgb(37, 37, 37);
+    color: white;
+    text-align: center;
+}
+
+.enunciado {
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: rgb(224, 223, 223);
+}
+
+hr {
+    margin: auto;
+    width: 50%;
+    border: none;
+    border-top: .0625rem solid red;
+}
+
+.titulo1{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(255, 0, 144);
+}
+
+.texto1 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: .8rem;
+    color: green;
+    width: 50%;
+    margin: auto;
+}
+.titulo2 {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(195, 0, 255);
+}
+
+.texto2 {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "BLED" 0,
+      "SCAN" 0,
+      "XELA" 0,
+      "YELA" 0;
+    font-size: .8rem;
+    color: green;
+    width: 50%;
+    margin: auto;
+}
+.titulo3 {
+    font-family: "Amatic SC", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(255, 234, 0);
+}
+
+.texto3 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: rgb(7, 88, 163);
+    width: 50%;
+    margin: auto;
+}
+
+.titulo4 {
+    font-family: "Passion One", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(0, 255, 225);
+}
+
+.texto4 {
+    font-family: "Gloria Hallelujah", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: rgb(128, 79, 0);
+    width: 50%;
+    margin: auto;
+}
+
