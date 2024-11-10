@@ -1,0 +1,107 @@
+/*
+    Javier Ruiz Herrera
+    Noviembre 2024
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(64, 64, 64);
+}
+
+header {
+    background-image: linear-gradient(to right, blue, white, green);
+    text-align: center;
+    padding: 1.25rem;
+    margin: .625rem;
+    border: .1875rem solid black;
+    border-radius: .9375rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.p1 {
+    text-align: center;
+    margin: .625rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: .625rem;
+    border: .1875rem solid black;
+    border-radius: .625rem;
+    background-image: linear-gradient(to bottom, red, yellow, red);
+    box-shadow: .3125rem .3125rem .625rem;
+    text-shadow: .0938rem .0938rem .1875rem;
+    width: 30%;
+    padding: 1.875rem;
+}
+
+.p2 {
+    text-align: center;
+    margin: .625rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: .625rem;
+    border: .1875rem solid black;
+    border-radius: .625rem;
+    background-image: linear-gradient(to right, green, white, red);
+    box-shadow: -0.3125rem -0.3125rem .625rem;
+    text-shadow: -0.0938rem -0.0938rem .1875rem;
+    width: 30%;
+    padding: 1.875rem;
+}
+
+.p3 {
+    text-align: center;
+    margin: .625rem;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: .625rem;
+    border: .1875rem solid black;
+    border-radius: .625rem;
+    background-image: radial-gradient(red 1%, white);
+    box-shadow: .125rem .125rem .625rem;
+    text-shadow: -0.0938rem -0.0938rem .1875rem;
+    width: 30%;
+    padding: 1.875rem;
+}
+
+.p4 {
+    text-align: center;
+    margin: .625rem;
+    width: 30%;
+    margin: auto;
+    margin-bottom: 1.25rem;
+    padding: .625rem;
+    border: .1875rem solid black;
+    border-radius: .625rem;
+    background-image: radial-gradient(green 1%,blue);
+    box-shadow: .125rem .125rem .625rem;
+    text-shadow: -0.0938rem -0.0938rem .1875rem;
+    padding: 1.875rem;
+}
+
+.imgYp{
+    background-image: linear-gradient(to right, transparent 50%,#037bc0 50%, #037bc0 100%), url(../IMG/pexels-pixabay-147411.jpg);
+    background-size: 100%, 100rem;
+    padding: 8rem 0;
+    background-repeat: no-repeat;
+    background-position: left center;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.imgYp h2{
+    grid-column: 2/3;
+    text-align: center;
+    color: white;
+}
