@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastBites - Pago</title>
+    <link rel="stylesheet" href="pedir.css">
+    <link rel="icon" type="image/png" href="IMG/imagen_2024-11-20_083756396-removebg-preview (1).png">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Para los iconos de tarjetas -->
+</head>
+<body>
+
+    <header>
+        <div id="logo">
+            <img class="logo-img" src="IMG/imagen_2024-11-20_083756396-removebg-preview (1).png" alt="Logo de FastBites">
+            <p class="logo-text">FAST<span>BITES</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="alergenos.html">ALERGENOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-order">¡Pide Ahora!</a>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="payment-container">
+            <h1>Realiza tu Pago</h1>
+
+            <!-- Formulario de Pago -->
+            <form method="POST" class="payment-form" id="payment-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-tarjeta">Tipo de Tarjeta</label>
+                    <select id="tipo-tarjeta" name="tipo-tarjeta" required>
+                        <option value="visa">Visa</option>
+                        <option value="mastercard">MasterCard</option>
+                        <option value="amex">American Express</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tarjeta">Número de Tarjeta</label>
+                    <input type="text" id="tarjeta" name="tarjeta" required maxlength="16" placeholder="1234 5678 9012 3456" pattern="\d{16}" title="El número de la tarjeta debe tener 16 dígitos">
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">Código CVV</label>
+                    <input type="text" id="cvv" name="cvv" required maxlength="3" placeholder="123" pattern="\d{3}" title="El código CVV debe tener 3 dígitos">
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Número de Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required placeholder="123-456-7890" pattern="\d{3}[-]\d{3}[-]\d{4}" title="El formato debe ser: 123-456-7890">
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección de Envío</label>
+                    <input type="text" id="direccion" name="direccion" required placeholder="Calle Falsa 123">
+                </div>
+
+                <div class="form-group">
+                    <label for="ciudad">Ciudad</label>
+                    <input type="text" id="ciudad" name="ciudad" required placeholder="Ciudad Ejemplo">
+                </div>
+
+                <div class="form-group">
+                    <label for="codigo-postal">Código Postal</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" required placeholder="12345" pattern="\d{5}" title="El código postal debe tener 5 dígitos">
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Acepto los <a href="#">términos y condiciones</a></label>
+                </div>
+
+                <div class="form-group submit-button">
+                    <input id="myBtn" type="submit" value="Pagar Ahora">
+                </div>
+
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>⚠️ ¡Faltan datos importantes! ⚠️</h2>
+                        <p>
+                            Para completar tu compra, asegúrate de llenar todos los campos requeridos del formulario. 📝  
+                            Esto nos ayudará a procesar tu pedido de manera rápida y sin problemas.  
+                        </p>
+                        <p>
+                            Revisa nuevamente la información ingresada y verifica que sea correcta.  
+                            Si tienes dudas, no dudes en contactarnos. 📞  
+                        </p>
+                    </div>
+
+                    <script src="pedir.js"></script>
+            </form>
+        </div>
+    </main>
+
+    <div class="audio-container">
+        <audio controls>
+            <source src="AUDIO/take it back [8TdkXDVgW3U].mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 FastBites. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com">
+                <img src="https://img.icons8.com/?size=100&id=118501&format=png&color=000000" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="https://img.icons8.com/?size=100&id=bYzsf9Bmocst&format=png&color=000000" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="https://img.icons8.com/?size=100&id=43625&format=png&color=000000" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script> <!-- Opcional: para validaciones adicionales con JS -->
+</body>
+</html>
