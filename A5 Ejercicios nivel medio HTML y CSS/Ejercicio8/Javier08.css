@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: left;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #003366;
+    text-align: center;
+    background-color: #3599fd;
+    font-style: italic;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    background-color: #7cb7f3;
+    font-style: italic;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+}
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+.dias th{
+    background-color: rgb(182, 232, 252);
+}
+
+th {
+    background-color: #ccccff;
+}
+
+.PRIMERO { background-color: rgb(120, 219, 255); color: rgb(0, 0, 0); font-weight: bold; text-align: center; font-size: 25px;}
+.RAL { background-color: red; color: white; }
+.SOM { background-color: lightgreen; }
+.MME { background-color: lightblue; }
+.APLOF { background-color: magenta; color: white; }
+.FOL { background-color: yellow; }
+.recreo { background-color: rgb(182, 232, 252); color: rgb(0, 0, 0); font-weight: bold; text-align: center;}
+
+/* Obra maestra realizada por Javier Ruiz Herrera */

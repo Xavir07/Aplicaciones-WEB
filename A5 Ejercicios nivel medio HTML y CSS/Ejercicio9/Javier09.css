@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d5e5c8;
+    width: 60%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    padding: 20px;
+}
+
+header h1 {
+    color: rgb(27, 38, 96);
+    letter-spacing: 30px;
+    text-align: right;
+}
+
+/* PRIMERO */
+
+.text-content {
+    width: 100%;
+}
+.text-content h2 {
+    width: 100%;
+    background-color: rgb(88, 111, 88);
+    color: white;
+    padding: 0px 5px;
+}
+.text-content p {
+    width: 100%;
+    margin: 20px 10px;
+}
+.SantaMariadelFiore {
+    width: 15%;
+}
+.SantaMariadelFiore img {
+    width: 100%;
+    height:auto;
+}
+
+/* SEGUNDO */
+
+.segundo {
+    display: block;
+}
+.segundo h2 {
+    width: 100%;
+    background-color: rgb(88, 111, 88);
+    color: white;
+    padding: 0px 5px;
+    margin-bottom: 20px;
+}
+.segundo p {
+    width: 100%;
+    margin: 10px 0px;
+}
+.SantaCroce {
+    margin: auto;
+    width: 300px;
+}
+.SantaCroce img {
+    width: 100%;
+    height: auto;
+}
+
+/* TERCERO */
+
+.tercero {
+    display: block;
+}
+
+.tercero h2 {
+    width: 100%;
+    background-color: rgb(88, 111, 88);
+    color: white;
+    padding: 0px 5px;
+}
+.text-content2 {
+    width: 100%;
+}
+.text-content2 p {
+    width: 60%;
+    margin: 20px 10px;
+}
+.SantaMariaNovella {
+    width: 100%;
+    float: right;
+}
+.SantaMariaNovella img {
+    width: 200px;
+    height: auto;
+}
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+    margin: 10px 5px;
+    bottom: 0;
+    left: 0;
+}
+
+/* Obra maestra realizada por Javier Ruiz Herrera */
