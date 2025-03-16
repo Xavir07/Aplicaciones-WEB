@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastBites - Pedir</title>
+    <link rel="stylesheet" href="pedir.css">
+    <link rel="icon" type="image/png" href="IMG/imagen_2024-11-20_083756396-removebg-preview (1).png">
+    <script src="pedir.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img class="logo-img" src="IMG/imagen_2024-11-20_083756396-removebg-preview (1).png" alt="Logo de FastBites">
+            <p class="logo-text">FAST<span>BITES</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="menu.html">MENÚ</a></li>
+                <li><a href="alergenos.html">ALERGENOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-order">¡Pide Ahora!</a>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Pedir - FastBites</h1>
+            <form id="register-form" onsubmit="validarFormulario(event)">
+                <label>Nombre*: <input type="text" name="nombre" required></label><br>
+                <label>Apellidos: <input type="text" name="apellidos"></label><br>
+                <label>Usuario*: <input type="text" name="usuario" required></label><br>
+                <label>Contraseña*: <input type="password" name="password1" id="password1" oninput="validarContrasena()" required></label><br>
+                <label>Repetir Contraseña*: <input type="password" name="password2" id="password2" oninput="validarContrasena()" required></label><br>
+                <span id="errorPassword" style="color:red;"></span><br>
+                <label>Email*: <input type="email" name="email" id="email" oninput="validarCorreo()" required></label><br>
+                <span id="errorEmail" style="color:red;"></span><br>
+                <label>Dirección*: <input type="text" name="direccion" required></label><br>
+                <label>Código Postal*:
+                    <select name="codigoPostal" onchange="mostrarProvincia()">
+                        <option value="28001">28001 - Madrid</option>
+                        <option value="41001">41001 - Sevilla</option>
+                        <option value="08001">08001 - Barcelona</option>
+                        <option value="50001">50001 - Zaragoza</option>
+                        <option value="46001">46001 - Valencia</option>
+                    </select>
+                </label><br>
+                <p id="provincia"></p>
+                <p>Intereses*:</p>
+                <label><input type="checkbox" name="intereses"> Música</label>
+                <label><input type="checkbox" name="intereses"> Cine</label>
+                <label><input type="checkbox" name="intereses"> Deportes</label>
+                <label><input type="checkbox" name="intereses"> Viajes</label>
+                <label><input type="checkbox" name="intereses"> Lectura</label>
+                <label><input type="checkbox" name="intereses"> Arte</label>
+                <label><input type="checkbox" name="intereses"> Cocina</label>
+                <label><input type="checkbox" name="intereses"> Tecnología</label><br>
+                <p>¿Desea recibir correos electrónicos?</p>
+                <label><input type="radio" name="correos" value="si" checked> Sí</label>
+                <label><input type="radio" name="correos" value="no"> No</label><br>
+                <label><input type="checkbox" id="terminos" onclick="activarCheckbox()" required> Acepto los <a href="#" target="_blank">términos y condiciones</a>*</label><br>
+                <button type="submit" id="aceptar" disabled>Aceptar</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 FastBites. Todos los derechos reservados.</p>
+        <div class="social-icons">
+            <a href="https://facebook.com">
+                <img src="https://img.icons8.com/?size=100&id=118501&format=png&color=000000" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="https://img.icons8.com/?size=100&id=bYzsf9Bmocst&format=png&color=000000" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="https://img.icons8.com/?size=100&id=43625&format=png&color=000000" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
